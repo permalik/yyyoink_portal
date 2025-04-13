@@ -1,0 +1,26 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 300;
+  line-height: 1.25;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+#root {
+  position: relative;
+  min-height: inherit;
+  display: flex;
+  flex-flow: column nowrap;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}

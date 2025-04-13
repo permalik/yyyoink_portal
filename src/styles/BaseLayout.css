@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+main {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1rem clamp(1.25rem, 3vw, 2rem);
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}

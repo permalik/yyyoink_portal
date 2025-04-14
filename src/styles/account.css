@@ -1,0 +1,59 @@
+.account-headingone {
+    margin: 0 0 clamp(3rem, 3vw, 5rem) 0;
+}
+
+.account-create-section {}
+
+.account-form-field {
+    margin: 0 0 clamp(0.75rem, 3vw, 1.5rem) 0;
+}
+
+.account-form-input {
+    width: 75%;
+}
+
+.account-form-buttons {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    & button {
+        width: 25%;
+        padding: 0.35rem 0;
+        font-weight: 500;
+    }
+
+    & button:first-of-type {
+        background-color: var(--primary-dark);
+        color: var(--primary-light);
+        border: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        & button:first-of-type {
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+            border: none;
+        }
+    }
+
+    & button:last-of-type {
+        background-color: var(--primary-light);
+        color: var(--primary-dark);
+        border-style: solid;
+        border-color: var(--primary-dark);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        & button:last-of-type {
+            background-color: var(--primary-dark);
+            color: var(--primary-light);
+            border-style: solid;
+            border-color: var(--primary-light);
+        }
+    }
+
+    & button:not(:last-of-type) {
+        margin: 0 1rem 0 0;
+    }
+}

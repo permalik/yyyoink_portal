@@ -1,0 +1,75 @@
+:root {
+  --heading-font: "Montserrat", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+  --subheading-font: "Lora", Georgia, "Times New Roman", Times, serif;
+  --body-font: "Hind Madurai", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --heading-one: clamp(2.488rem, 5vw, 3.815rem);   /* ~39.8px to ~61px */
+  --heading-two: clamp(1.99rem, 4vw, 3.052rem);    /* ~31.8px to ~48.8px */
+  --heading-three: clamp(1.563rem, 3vw, 2.441rem); /* ~25px to ~39px */
+  --heading-four: clamp(1.25rem, 2.5vw, 1.953rem); /* ~20px to ~31.2px */
+  --heading-five: clamp(1rem, 2vw, 1.563rem);      /* ~16px to ~25px */
+  --heading-six: clamp(0.8rem, 1.5vw, 1.25rem);    /* ~12.8px to ~20px */
+  --base-fontsize: clamp(1rem, 1.75vw, 1.125rem); /* ~16px to ~18px */
+  --primary-dark: hsla(45,22%,4%,1.0);
+  --primary-light: hsla(22, 100%, 91%, 1.0);
+  --primary-accent: hsla(304, 34%, 45%, 1.0);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  max-width: 60rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.25;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--primary-light);
+  font-family: var(--body-font);
+  font-size: var(--base-fontsize);
+  font-weight: 400;
+  color: var(--primary-dark);
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+  }
+}
+#root {
+  position: relative;
+  min-height: inherit;
+  display: flex;
+  flex-flow: column nowrap;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+h1 {
+  font-size: var(--heading-one);
+}
+h2 {
+  font-size: var(--heading-two);
+}
+h3 {
+  font-size: var(--heading-three);
+}
+h4 {
+  font-size: var(--heading-four);
+}
+h5, h6 {
+  font-size: var(--heading-five);
+}
+a {
+  font-size: var(--base-fontsize);
+  color: var(--primary-dark);
+  text-decoration: none;
+}

@@ -3,6 +3,12 @@
   font-weight: 400;
 }
 
+@media (prefers-color-scheme: dark) {
+  .baselayout-nav-link {
+    color: var(--primary-light);
+  }
+}
+
 .baselayout-header {
   margin: 0 0 clamp(7rem, 3vw, 10rem) 0;
   padding: 1rem clamp(1.25rem, 3vw, 2rem);
@@ -26,7 +32,6 @@
 }
 
 main {
-  max-width: 50rem;
   margin: 0 auto;
   padding: 1rem clamp(1.25rem, 3vw, 2rem);
   flex: 1;

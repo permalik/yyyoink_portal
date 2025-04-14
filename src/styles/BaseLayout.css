@@ -1,7 +1,28 @@
-header {
+.baselayout-nav-link {
+  font-family: var(--body-font);
+  font-weight: 400;
+}
+
+.baselayout-header {
+  margin: 0 0 clamp(7rem, 3vw, 10rem) 0;
+  padding: 1rem clamp(1.25rem, 3vw, 2rem);
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
   justify-content: space-between;
+
+  & .baselayout-logo {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--primary-accent);
+  }
+
+  & nav {
+    & a:not(:last-of-type) {
+        margin: 0 0.5rem 0 0;
+    }
+  }
 }
 
 main {
@@ -11,8 +32,15 @@ main {
   flex: 1;
 }
 
-footer {
+.baselayout-footer {
+  padding: 1rem clamp(1.25rem, 3vw, 2rem);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+
+  & nav {
+    & a:not(:last-of-type) {
+      margin: 0 0.5rem 0 0;
+    }
+  }
 }

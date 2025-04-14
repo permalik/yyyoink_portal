@@ -4,22 +4,22 @@ import "./styles/BaseLayout.css";
 function BaseLayout({children}: React.PropsWithChildren) {
     return (
         <>
-            <header style={{backgroundColor: "red"}}>
-                <a href="/">
+            <header className={"baselayout-header"}>
+                <a className={"baselayout-logo"} href="/">
                     Yoink
                 </a>
                 <nav>
-                    <a href="/manual">Manual</a>
-                    <a href="/account">Account</a>
+                    <a className={"baselayout-nav-link"} href="/manual">Manual</a>
+                    <a className={"baselayout-nav-link"} href="/account">Account</a>
                 </nav>
             </header>
-            <main style={{backgroundColor: "blue"}}>
+            <main>
                 {children}
             </main>
-            <footer style={{backgroundColor: "green"}}>
+            <footer className={"baselayout-footer"}>
                 <nav>
-                    <a href="https://github.com/permalik/yyyoink_desktop">GitHub</a>
-                    <a href="/roadmap">Roadmap</a>
+                    <a className={"baselayout-nav-link"} href="https://github.com/permalik/yyyoink_desktop">GitHub</a>
+                    <a className={"baselayout-nav-link"} href="/roadmap">Roadmap</a>
                 </nav>
                 <p>
                     © 2025 permalik

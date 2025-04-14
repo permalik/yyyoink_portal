@@ -1,0 +1,21 @@
+.roadmap-headingone {
+    margin: 0 0 clamp(3rem, 3vw, 5rem) 0;
+}
+
+.roadmap-section {
+    margin: 0 0 clamp(1rem, 3vw, 2rem) 0;
+}
+
+.roadmap-time {
+    margin: 0 0 clamp(0.25rem, 3vw, 0.5rem) 0;
+    display: inline-block;
+    font-weight: 500;
+    opacity: 0.75;
+}
+
+.roadmap-headingtwo {
+    margin: 0 0 clamp(0.125rem, 3vw, 0.25rem) 0;
+    font-size: var(--heading-five);
+}
+
+.roadmap-description {}

@@ -1,2 +1,2 @@
-# yyyoink_portal
-application:Yoink Marketing and Account Management
+# yyyoink-portal
+application:Marketing and Account Management
